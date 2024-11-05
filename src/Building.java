@@ -49,6 +49,22 @@ public class Building {
       this.squareMeters = squareMeters;
    }
 
+   //Getter
+   //Methoden die den Zugriff auf Membervariablen von Außerhalb erlauben
 
+   public String getName(){
+      return name;
+   }
 
+   public int getFloors() {
+      return floors;
+   }
+
+   public int getRoomCount() {
+      return roomCount;
+   }
+
+   public int getSquareMeters() {
+      return squareMeters;
+   }
 }
