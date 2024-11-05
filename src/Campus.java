@@ -32,4 +32,8 @@ public class Campus {
 
         return str;
     }
+
+    public Building[] getBuildings() {
+        return buildings;
+    }
 }

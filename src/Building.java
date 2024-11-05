@@ -67,4 +67,29 @@ public class Building {
    public int getSquareMeters() {
       return squareMeters;
    }
+
+   public void setName(String name) {
+      if( !name.isEmpty() ){
+         this.name = name;
+      }
+
+   }
+
+   public void setFloors(int floors) {
+      if(floors > 0) { //nur wenn Wert zulässig
+         this.floors = floors;
+      }
+   }
+
+   public void setRoomCount(int roomCount) {
+
+      if( roomCount <= 0) return;  //wenn roomCount 0 oder kleiner ist hier Schluss
+
+      this.roomCount = roomCount;
+   }
+
+   public void setSquareMeters(int squareMeters) {
+      if( squareMeters <= 0) return;
+      this.squareMeters = squareMeters;
+   }
 }
