@@ -1,3 +1,5 @@
+package program;
+
 public class Building {
 
     //Eigenschaften der Klasse (auch Attribute oder Felder oder Membervariablen)
@@ -66,6 +68,11 @@ public class Building {
 
    public int getSquareMeters() {
       return squareMeters;
+   }
+
+
+   public void print(){
+      System.out.println("Gebäudeklasse");
    }
 
    public void setName(String name) {

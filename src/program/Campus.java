@@ -1,14 +1,19 @@
+package program;
+
 public class Campus {
     private Building[] buildings;
 
     public Campus(){
 
-        buildings = new Building[4];
+        buildings = new Building[5];
 
-        buildings[0]= new Building("BS 6");
+        buildings[0]= new Building("BS 6", 5);
         buildings[1] = new Building("BS 11", 4);
         buildings[2] = new Building("Cube", 1, 10);
         buildings[3] = new Building("BS 15", 3, 30, 1000);
+        buildings[4] = new ParkingGarage("Parkhaus", 3, 500);
+
+        buildings[4].print();
     }
 
     public String toString(){
@@ -22,7 +27,7 @@ public class Campus {
             int roomCount = building.getRoomCount();
             int squareMeters = building.getSquareMeters();
 
-            str += "Building: " + name +" ,Floors: "
+            str += "program.Building: " + name +" ,Floors: "
                     + floors+", RoomCount: "+ roomCount +
                     " , SquareMeters: "+ squareMeters;
 
